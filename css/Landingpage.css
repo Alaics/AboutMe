@@ -1,3 +1,13 @@
+.parallax {
+  background-image: url('/images/bg.jpg');
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
 .logo {
     float: left;
     font: 400 20px "Century Gothic", sans-serif;
@@ -20,6 +30,7 @@
   
   .dropdown-content {
     display: none;
+    width: 100%;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
@@ -57,7 +68,51 @@
     object-fit: none;
     background-color: rgb(255, 255, 255);
     background-blend-mode: multiply;
+    display: none;
   }
+  @media only screen and (min-width: 500px) {
+      .background-container {
+      display: block;
+      width: 100%;
+      padding-bottom: 300px;
+  }
+  
+  .education-logo1 {
+    padding: 20px 0px 0px;
+  }
+  
+  .Alaica,
+  .Alaica * {
+    box-sizing: border-box;
+  }
+  .Alaica {
+    color: #000000;
+    text-align: left;
+    font: 700 96px "Outfit", sans-serif;
+    width: 714px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 0px 0px;
+    top: 20px;
+    left: 0;
+    animation: sway 1s alternate;
+    z-index: 1;
+  }
+  .detail {
+    font: 20px "Outfit", sans-serif;
+    padding: 20px 0px 0px;
+  }
+  .education-logo1 {
+    padding: 20px 0px 0px 30px;
+  }
+  .education-logo2 {
+    padding: 20px 0px 0px 30px;
+
+  }
+  .edu {
+    padding: 20px 0px 0px 30px;
+  }
+}
   .contact {
     color: #000000;
     justify-content: center;
@@ -92,7 +147,6 @@
     margin-top: 70px;
     transition: transform 0.3s ease;
     text-decoration: none;
-    background-color: transparent;
     animation: sway 1.5s alternate;
     margin-left: 120px;
   }
@@ -141,14 +195,13 @@
   }
   
   .hero-image {
-    height: 180px;
+    background-image: url('/images/ABOUT.png');
+    height: 150px;
     background-position: center;
     align-items: center;
     background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
-    color: white;
-    padding-left: 200px;
+    padding-left: 235px;
     padding-top: 20px;
   }
   
@@ -163,7 +216,6 @@
   
   .content-1 {
     font-family: "Poppins";
-    background-color: #fff;
     margin: 20px auto;
     padding: 5px;
     text-align: center;
@@ -186,10 +238,9 @@
   }
   
   .footer {
-    background-color: #043263;
     color: #FFF8EE;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
   }
   
   .container-2 {
@@ -266,7 +317,8 @@
     align-items: center;
     flex-direction: column; 
     box-sizing: border-box;
-    background-color: #806791;
+    background-color: #fbfbfb;
+    border: 3px solid #AE746B;
   }
   
   .education {
@@ -308,20 +360,21 @@
   .education-logo1 {
     width: 310px;
     height: auto; 
-    margin-right: 15px;
-    padding-right: 20px;
+    margin-right: 20px;
+    padding-right: 30px;
   }
   
   .education-logo2 {
-    width: 250px; 
+    width: 260px; 
     height: auto; 
-    margin-right: 87px; 
+    margin-right: 75px; 
     padding-right: 20px;
+
   }
   
   .education-details {
     font-size: 30px;
-    color: #ffffff;
+    color: #3B2C3A;
   }
   
   .EDUCATION {
@@ -341,26 +394,32 @@
   }
   
   .contact-footer {
-    background-color: #000000; 
-    color: #ffffff;
-    padding: 10px;
+    background-color: #ffffff; 
+    color: #3a2c39;
+    padding: 2px;
     text-align: center;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-family: "Arial", sans-serif;
     border-top: 4px solid #806791; 
   }
+
+  hr {
+    width: 50px;
+    font-weight: 600;
+  }
   
   .contact-info {
     flex: 1;
-    padding: 5px;
+    padding: 1px;
   }
   
   .contact-info h3 {
-    font-size: 15px;
-    margin-bottom: 1px;
-    color: #ffffff;
+    font-size: 30px;
+    color: #28193b;
+    font-family: 'poppins';
+    font-weight: 3px;
+    padding-bottom: 1px;
   }
   
   .contact-info p {
@@ -378,7 +437,7 @@
   
   h2 {
     text-align: center;
-    color: #333;
+    color: #e3e3e3;
   }
   
   .skill-list {
@@ -407,4 +466,57 @@
     color: white;
     padding-left: 500px;
   }
-  
+
+.container5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+
+}
+
+.container5 .heading .h3 .skillss {
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.early{
+  font-family: 'poppins';
+}
+
+.skillss{
+  font-family: 'poppins';
+  width: 100%
+}
+
+.container5 .heading {
+    font-size: 3em;
+    font-weight: bolder;
+    border-bottom: 3px;
+    padding-bottom: 3px solid #222;
+}
+
+.container5 .heading .h3 .skillss{
+    font-weight: 100;
+}
+
+.container5 .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container5 .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.container5 .box .dream img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
