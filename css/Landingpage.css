@@ -2,7 +2,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden; 
 }
+
 .container6 {
   max-width: 1200px;
   margin: 0 auto;
@@ -75,8 +77,6 @@ body {
   @media only screen and (min-width: 768px) {
     .background-container {
       display: block;
-
-      width: 100%;
       padding-bottom: 18.97% ;
       padding-left: 0px;
     }
@@ -91,11 +91,6 @@ body {
 }
 
 @media only screen and (min-width: 1024px) {
-  /* Add styles for larger screens (e.g., desktop) here */
-  .background-container {
-    padding: 20px 0px 0px; /* Adjust this value for larger screens */
-  }
-
   .container5 .box {
     flex-direction: row; 
   }
@@ -103,10 +98,7 @@ body {
   .container-2 {
     flex-direction: row; 
   }
-  .education-logo1 {
-    padding: 20px 0px 0px;
-  }
-  
+
   .Alaica,
   .Alaica * {
     box-sizing: border-box;
@@ -128,44 +120,28 @@ body {
     font: 20px "Outfit", sans-serif;
     padding: 20px 0px 0px;
   }
-  .education-logo1 {
-    padding: 20px 0px 0px 30px;
-  }
-  .education-logo2 {
-    padding: 20px 0px 0px 30px;
-
-  }
   .edu {
     padding: 20px 0px 0px 30px;
   }
 }
   @media only screen and (min-width: 1024px) {
-  /* Add styles for larger screens (e.g., desktop) here */
-  .background-container {
-    padding-bottom: 15%; /* Adjust this value for larger screens */
-  }
-
-  /* Other responsive styles for desktop screens */
-
   .container5 .box {
-    flex-direction: row; /* Ensure items are side by side on larger screens */
+    flex-direction: row; /
   }
 }
-
-
   .contact {
     color: #000000;
     justify-content: center;
     font: 200 15px "Century Gothic", sans-serif;
     border: 1px solid #c197d2;
     border-radius: 15px;
-    display: inline-block; /* Use inline-block to make them appear in the same line */
+    display: inline-block; 
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 45px;
     width: 150px;
     margin-top: 70px;
-    margin-left: 10px; /* Adjust the margin as needed */
+    margin-left: 10px;
     transition: transform 0.3s ease;
     text-decoration: none;
     background-color: #c197d2;
@@ -356,7 +332,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 20px; /* Adjust the margin as needed */
+    margin-top: 20px; 
   }
   
   .education-list {
@@ -371,7 +347,7 @@ body {
   }
   
   .education-logo {
-    width: 100px; /* Adjust the logo size as needed */
+    width: 100px; 
     height: auto;
     margin-right: 20px;
   }
@@ -382,12 +358,12 @@ body {
   }
   
   .education-details h3 {
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 24px; 
     margin: 0;
   }
   
   .education-details p {
-    font-size: 16px; /* Adjust the font size as needed */
+    font-size: 16px; 
     margin: 5px 0;
   }
   
@@ -418,7 +394,7 @@ body {
     border-top: 4px solid #806791; 
   }
 
-  hr {
+  .two {
     width: 50px;
     font-weight: 600;
   }
@@ -442,7 +418,7 @@ body {
   }
   
   .skills {
-    background-color: #fff;
+    background-color: #3d3d3d;
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
