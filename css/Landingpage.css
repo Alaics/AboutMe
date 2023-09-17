@@ -1,13 +1,13 @@
-.parallax {
-  background-image: url('/images/bg.jpg');
-  height: 100%; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: overlay;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
-
+.container6 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
 .logo {
     float: left;
     font: 400 20px "Century Gothic", sans-serif;
@@ -75,9 +75,11 @@
   @media only screen and (min-width: 768px) {
     .background-container {
       display: block;
+
       width: 100%;
-      padding-bottom: 18.97% /* Adjust this value as needed for the desired responsive look */
-  }
+      padding-bottom: 18.97% ;
+      padding-left: 0px;
+    }
   
   .hero-image {
     padding-left: 0; 
@@ -180,13 +182,13 @@
     display: inline-block; 
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 45px;
+    padding-left: 30px;
     width: 150px;
     margin-top: 70px;
     transition: transform 0.3s ease;
     text-decoration: none;
     animation: sway 1.5s alternate;
-    margin-left: 120px;
+    margin-left: 80px;
   }
   
   .knowmore:hover,
@@ -239,7 +241,7 @@
     align-items: center;
     background-repeat: no-repeat;
     position: relative;
-    padding-left: 235px;
+    padding-left: 150px;
     padding-top: 20px;
   }
   
@@ -351,35 +353,12 @@
   
   .container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    flex-direction: column; 
-    box-sizing: border-box;
-    background-color: #fbfbfb;
-    border: 3px solid #AE746B;
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed */
   }
   
-  .education {
-    background-color: #000000; 
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
-    width: 90%; 
-    margin: 0 auto; 
-  }
-  
-  .edu {
-    height: 100px;
-    background-position: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    color: white;
-    padding-left: 500px;
-    padding-bottom: 20px;
-  }
-  
-
   .education-list {
     list-style-type: none;
     padding: 0;
@@ -389,30 +368,27 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    font-family: "Poppins", sans-serif; 
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 5px;
   }
   
-  .education-logo1 {
-    width: 310px;
-    height: auto; 
+  .education-logo {
+    width: 100px; /* Adjust the logo size as needed */
+    height: auto;
     margin-right: 20px;
-    padding-right: 30px;
-  }
-  
-  .education-logo2 {
-    width: 260px; 
-    height: auto; 
-    margin-right: 75px; 
-    padding-right: 20px;
-
   }
   
   .education-details {
-    font-size: 30px;
-    color: #3B2C3A;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .education-details h3 {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin: 0;
+  }
+  
+  .education-details p {
+    font-size: 16px; /* Adjust the font size as needed */
+    margin: 5px 0;
   }
   
   .EDUCATION {
@@ -519,10 +495,6 @@
 .container5 .heading .h3 .skillss {
     width: 50%;
     padding-bottom: 50px;
-}
-
-.early{
-  font-family: 'poppins';
 }
 
 .skillss{
