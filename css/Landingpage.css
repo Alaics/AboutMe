@@ -88,7 +88,23 @@ body {
   .container-2 {
     flex-direction: row;
   }
+  .education-logo1{
+    padding: 20px 0px 0px 30px;
+  }
+  .education-logo2{
+    padding: 20px 0px 0px 30px;
+  }
 }
+
+@media (max-width: 768px) {
+  .background-container {
+      max-width: auto;
+      display: block;
+      padding-bottom: 18.97% ;
+      padding-left: 0px;
+    }
+
+  }
 
 @media only screen and (min-width: 1024px) {
   .container5 .box {
@@ -106,7 +122,7 @@ body {
   .Alaica {
     color: #000000;
     text-align: left;
-    font: 700 96px "Outfit", sans-serif;
+    font: 350 45px "Outfit", sans-serif;
     width: 714px;
     display: flex;
     justify-content: flex-start;
@@ -123,6 +139,8 @@ body {
   .edu {
     padding: 20px 0px 0px 30px;
   }
+
+
 }
   @media only screen and (min-width: 1024px) {
   .container5 .box {
@@ -329,12 +347,34 @@ body {
   
   .container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    margin-top: 20px; 
+    flex-direction: column; 
+    box-sizing: border-box;
+    background-color: #93819f;
   }
   
+  .education {
+    background-color: #000000 !important; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    width: 90%; 
+    margin: 0 auto; 
+  }
+  
+  .edu {
+    height: 100px;
+    background-position: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    padding-left: 500px;
+    padding-bottom: 20px;
+  }
+  
+  /* Style for the education list */
   .education-list {
     list-style-type: none;
     padding: 0;
@@ -344,35 +384,29 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    font-family: "Poppins", sans-serif; 
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
   }
   
-  .education-logo {
-    width: 100px; 
-    height: auto;
-    margin-right: 20px;
+  .education-logo1 {
+    width: 310px;
+    height: auto; 
+    margin-right: 15px;
+    padding-right: 20px;
+  }
+  
+  .education-logo2 {
+    width: 250px; 
+    height: auto; 
+    margin-right: 87px; 
+    padding-right: 20px;
   }
   
   .education-details {
-    text-align: left;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  .education-details h3 {
-    font-size: 24px; 
-    margin: 0;
-  }
-  
-  .education-details p {
-    font-size: 16px; 
-    margin: 5px 0;
-  }
-  
-  .EDUCATION {
-    color: #000000; 
-    text-align: center;
-    margin-top: 40px;
-    font-family: "Poppins";
-    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
   }
   
   H1 {
@@ -391,7 +425,7 @@ body {
     display: flex;
     align-items: center;
     font-family: "Arial", sans-serif;
-    border-top: 4px solid #806791; 
+    border-top: 4px solid #c2b1ce; 
   }
 
   .two {
@@ -418,8 +452,9 @@ body {
   }
   
   .skills {
-    background-color: #3d3d3d;
-    max-width: 600px;
+    align-items: center;
+    text-align: center;
+    max-width: 650px;
     margin: 40px auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
