@@ -62,6 +62,8 @@
   .background-container {
     background-image: url("../images/landing.png");
     background-size: 1550px 870px;
+    background-size: cover;
+    padding-bottom: 56.13%; 
     padding-bottom: 300px;
     background-repeat: no-repeat;
     background-position: center;
@@ -70,13 +72,35 @@
     background-blend-mode: multiply;
     display: none;
   }
-  @media only screen and (min-width: 500px) {
-      .background-container {
+  @media only screen and (min-width: 768px) {
+    .background-container {
       display: block;
       width: 100%;
-      padding-bottom: 300px;
+      padding-bottom: 18.97% /* Adjust this value as needed for the desired responsive look */
   }
   
+  .hero-image {
+    padding-left: 0; 
+  }
+
+  .container-2 {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Add styles for larger screens (e.g., desktop) here */
+  .background-container {
+    padding: 20px 0px 0px; /* Adjust this value for larger screens */
+  }
+
+  .container5 .box {
+    flex-direction: row; 
+  }
+
+  .container-2 {
+    flex-direction: row; 
+  }
   .education-logo1 {
     padding: 20px 0px 0px;
   }
@@ -113,6 +137,20 @@
     padding: 20px 0px 0px 30px;
   }
 }
+  @media only screen and (min-width: 1024px) {
+  /* Add styles for larger screens (e.g., desktop) here */
+  .background-container {
+    padding-bottom: 15%; /* Adjust this value for larger screens */
+  }
+
+  /* Other responsive styles for desktop screens */
+
+  .container5 .box {
+    flex-direction: row; /* Ensure items are side by side on larger screens */
+  }
+}
+
+
   .contact {
     color: #000000;
     justify-content: center;
@@ -322,7 +360,7 @@
   }
   
   .education {
-    background-color: #000000 !important; 
+    background-color: #000000; 
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
     width: 90%; 
@@ -341,7 +379,7 @@
     padding-bottom: 20px;
   }
   
-  /* Style for the education list */
+
   .education-list {
     list-style-type: none;
     padding: 0;
