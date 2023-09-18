@@ -349,10 +349,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
     box-sizing: border-box;
-    background-color: #93819f;
+    background: linear-gradient(to right, white, #93819f);
   }
+  
   
   .education {
     background-color: #000000 !important; 
@@ -406,7 +407,7 @@ body {
   
   .education-details {
     font-size: 30px;
-    color: #ffffff;
+    color: #27212a;
   }
   
   H1 {
